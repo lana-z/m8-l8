@@ -201,7 +201,7 @@ def test_comparison_brief_has_substance():
             "replace placeholders with your analysis"
         )
     metric_numbers = re.findall(r"\d+\.\d+", body)
-    assert len(metric_numbers) >= 9, (
+    assert len(metric_numbers) >= 15, (
         f"comparison_brief.md metrics table looks unfilled: found {len(metric_numbers)} decimal "
-        "numbers; need at least 9 (3 retrievers × recall@5/recall@10/MRR)"
+        "numbers; need at least 15 (3 retrievers × recall@5/recall@10/MRR/factoid recall@5/paraphrastic recall@5)"
     )

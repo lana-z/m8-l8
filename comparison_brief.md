@@ -4,13 +4,13 @@
 
 ## Metrics Table
 
-| Retriever | recall@5 | recall@10 | MRR |
-|---|---|---|---|
-| BM25 | _your number_ | _your number_ | _your number_ |
-| Dense | _your number_ | _your number_ | _your number_ |
-| Hybrid (α=0.5) | _your number_ | _your number_ | _your number_ |
+All columns are required. The per-query-type breakdown (factoid vs. paraphrastic recall@5) is the column that exposes the BM25-vs-dense divergence; the aggregate columns alone hide it.
 
-Optionally include a per-`query_type` breakdown (factoid vs. paraphrastic).
+| Retriever | recall@5 | recall@10 | MRR | factoid recall@5 | paraphrastic recall@5 |
+|---|---|---|---|---|---|
+| BM25 | _your number_ | _your number_ | _your number_ | _your number_ | _your number_ |
+| Dense | _your number_ | _your number_ | _your number_ | _your number_ | _your number_ |
+| Hybrid (α=0.5) | _your number_ | _your number_ | _your number_ | _your number_ | _your number_ |
 
 ## Where BM25 Wins
 
